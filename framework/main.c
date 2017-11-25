@@ -6,14 +6,14 @@
 /*   By: etieberg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/24 23:01:29 by etieberg          #+#    #+#             */
-/*   Updated: 2017/11/25 10:19:18 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/25 12:45:06 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		main(void)
 {
 	pid_t	strlen;
-
+// Ne pas l'indiquer ici et faire une structure avec tous les noms des tests ? 
 	strlen = fork();
 	if (strlen > 0)
 	{
