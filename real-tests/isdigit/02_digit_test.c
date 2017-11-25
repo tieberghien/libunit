@@ -6,7 +6,7 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 15:14:32 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/25 15:14:43 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/25 17:22:24 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int		digit_test(void)
 {
-	if (ft_toupper("42") == toupper("42"))
+	if (ft_isdigit('a') == isdigit('a'))
 		return (0);
 	else
 		return (-1);

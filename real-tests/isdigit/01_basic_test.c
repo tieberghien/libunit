@@ -6,7 +6,7 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 15:08:07 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/25 15:12:21 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/25 17:21:59 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int		basic_test(void)
 {
-	if (ft_toupper("maj") == toupper("maj"))
+	if (ft_isdigit('2') == isdigit("2"))
 		return (0);
 	else
 		return (-1);
