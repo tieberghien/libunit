@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   03_segv_test.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etieberg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/24 23:00:41 by etieberg          #+#    #+#             */
-/*   Updated: 2017/11/25 19:40:44 by etieberg         ###   ########.fr       */
+/*   Created: 2017/11/25 19:44:04 by etieberg          #+#    #+#             */
+/*   Updated: 2017/11/25 19:49:43 by etieberg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "test.h"
 
-int		main(void)
+int		segv_test(void)
 {
-	ok_launcher();
-	ko_launcher();
-	segv_launcher();
-	buse_launcher();
-	return (0);
+	char	str[5];
+
+	if (str[10] == 'a')
+		return (0);
+	else
+		return (-1);
 }

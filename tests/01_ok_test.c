@@ -1,22 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   01_ok_test.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etieberg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/24 23:00:41 by etieberg          #+#    #+#             */
-/*   Updated: 2017/11/25 19:40:44 by etieberg         ###   ########.fr       */
+/*   Created: 2017/11/25 19:43:30 by etieberg          #+#    #+#             */
+/*   Updated: 2017/11/25 19:47:18 by etieberg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "test.h"
 
-int		main(void)
+int		ok_test(void)
 {
-	ok_launcher();
-	ko_launcher();
-	segv_launcher();
-	buse_launcher();
-	return (0);
+	if (ft_atoi("42") == atoi("42"))
+		return (0);
+	else
+		return (-1);
 }

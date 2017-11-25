@@ -6,7 +6,7 @@
 /*   By: etieberg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/24 23:01:29 by etieberg          #+#    #+#             */
-/*   Updated: 2017/11/25 18:35:35 by etieberg         ###   ########.fr       */
+/*   Updated: 2017/11/25 21:51:18 by etieberg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,20 @@
 static t_unit	*create_test_unit(char *name_test, int (*f)(void))
 {
 	t_unit		*test;
-
-	if (!(test = (t_unit*)malloc(sizeof(t_unit))))
-		return (NULL);
-	if (name_test == NULL || f == 0)
+	
+	test = ft_malloc_check(sizeof(t_unit));
+	test->test = ft_malloc_check(ft_strlen(name_test) + 1);
+	if (!name_test || f == 0)
 	{
-		free(test);
-		return (NULL);
+		free(test->test);
+		test->test = NULL;
+		test->f = 0;
 	}
-	test->test = ft_strdup(name_test);
-	test->f = f;
+	else
+	{
+		ft_memcpy(test->test, name_test, ft_strlen(name_test) + 1);
+		test->f = f;
+	}
 	test->next = NULL;
 	return (test);
 }
@@ -52,11 +56,11 @@ static int		display_res(pid_t pid)
 			return (-1);
 		}
 	}
-	else if (WIFSTOPPED(pid))
+	else if (WIFSIGNALED(pid))
 	{
-		if (pid == SIGSEGV)
+		if (WTERMSIG(pid) == SIGSEGV)
 			ft_putendl("[SEGV]");
-		else if (pid == SIGBUS)
+		else if (WTERMSIG(pid) == SIGBUS)
 			ft_putendl("[BUSE]");
 		return (-1);
 	}
@@ -96,7 +100,7 @@ int				launch_tests(t_unit **tests, int n_tests)
 	free(tmp);
 	ft_putnbr(res);
 	ft_putstr(" / ");
-	ft_putndr(n_tests);
+	ft_putnbr(n_tests);
 	ft_putstr(" test(s) passed");
 	return (res == n_tests ? 0 : -1);
 }

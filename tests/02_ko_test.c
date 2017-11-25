@@ -1,22 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   02_ko_test.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etieberg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/24 23:00:41 by etieberg          #+#    #+#             */
-/*   Updated: 2017/11/25 19:40:44 by etieberg         ###   ########.fr       */
+/*   Created: 2017/11/25 19:43:50 by etieberg          #+#    #+#             */
+/*   Updated: 2017/11/25 19:48:37 by etieberg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "test.h"
 
-int		main(void)
+int		ko_test(void)
 {
-	ok_launcher();
-	ko_launcher();
-	segv_launcher();
-	buse_launcher();
-	return (0);
+	if (1 == 2)
+		return (0);
+	else
+		return (-1);
 }

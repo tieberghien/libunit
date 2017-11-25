@@ -5,36 +5,53 @@
 #                                                     +:+ +:+         +:+      #
 #    By: etieberg <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2017/11/24 22:27:54 by etieberg          #+#    #+#              #
-#    Updated: 2017/11/24 22:35:25 by etieberg         ###   ########.fr        #
+#    Created: 2016/11/08 20:01:36 by etieberg          #+#    #+#              #
+#    Updated: 2017/11/25 21:51:49 by etieberg         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= 	libunit.a
-CC			=	gcc
-CFLAGS		=	-g -Wall -Werror -Wextra
+NAME		=	libunit.a
+CC			=   gcc
+CFLAGS		=   -g -Wall -Werror -Wextra
 
-SRC_DIR		=	framework
-SRC			=	main.c
+LIB_PATH	=   libft
+LIB			=   $(LIB_PATH)/libft.a
 
-OBJ_DIR		=	obj
+INC_DIR		=	includes
+INCS		=   -I $(INC_DIR) -I $(LIB_PATH)/includes
 
-SRCS        =   $(addprefix $(SRC_DIR)/, $(SRC))
-OBJS        =   $(addprefix $(OBJ_DIR)/, $(SRC:.c=.o))
+SRC_DIR     =   framework
+SRC			=	main.c		\
+				colours.c
 
-all = obj $(NAME)
+OBJ_DIR		=	framework/obj
 
-$(NAME): $(OBJS)
-	ar -rc $(NAME) $(OBJ)
-	ranlib $(NAME)
+SRCS		=	$(addprefix $(SRC_DIR)/, $(SRC))
+OBJS		=	$(addprefix $(OBJ_DIR)/, $(SRC:.c=.o))
 
-obj:
-	mkdir -p obj
+all: framework/obj $(NAME)
+
+$(NAME): $(LIB) $(OBJS)
+	cp $(LIB) $@
+	ar rc $@ $^
+	ranlib $@
+
+$(LIB):
+	make -C $(LIB_PATH) re
+
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
+	$(CC) $(CFLAGS) $(INCS) -c -o $@ $<
+
+framework/obj:
+	mkdir -p framework/obj
 
 clean:
-	/bin/rm -f $(OBJS)
+	make -C $(LIB_PATH) clean
+	/bin/rm -f $(OBJ)
+	/bin/rm -Rf framework/obj
 
 fclean: clean
+	/bin/rm -f $(LIB)
 	/bin/rm -f $(NAME)
 
 re: fclean all

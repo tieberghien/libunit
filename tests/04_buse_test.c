@@ -1,22 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   04_buse_test.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etieberg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/24 23:00:41 by etieberg          #+#    #+#             */
-/*   Updated: 2017/11/25 19:40:44 by etieberg         ###   ########.fr       */
+/*   Created: 2017/11/25 19:44:17 by etieberg          #+#    #+#             */
+/*   Updated: 2017/11/25 19:51:55 by etieberg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "test.h"
 
-int		main(void)
+int		buse_test(void)
 {
-	ok_launcher();
-	ko_launcher();
-	segv_launcher();
-	buse_launcher();
-	return (0);
+	char	*dummy;
+
+	if (!(dummy = (char*)malloc(sizeof(char) * 2)))
+		return (-1);
+	free(dummy);
+	if (dummy[0] = 'a')
+		return (0);
+	else
+		return (-1);
 }
