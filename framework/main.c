@@ -6,7 +6,7 @@
 /*   By: etieberg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/24 23:01:29 by etieberg          #+#    #+#             */
-/*   Updated: 2017/11/25 21:51:18 by etieberg         ###   ########.fr       */
+/*   Updated: 2017/11/25 23:33:35 by etieberg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static t_unit	*create_test_unit(char *name_test, int (*f)(void))
 {
 	t_unit		*test;
-	
+
 	test = ft_malloc_check(sizeof(t_unit));
 	test->test = ft_malloc_check(ft_strlen(name_test) + 1);
 	if (!name_test || f == 0)
@@ -33,14 +33,13 @@ static t_unit	*create_test_unit(char *name_test, int (*f)(void))
 	return (test);
 }
 
-void			load_tests(t_unit **lst, char *name_test, int (*f)(void), int *i)
+void			load_tests(t_unit **lst, char *n_test, int (*f)(void), int *i)
 {
 	t_unit		*test;
 
-	test = create_test_unit(name_test, f); 
+	test = create_test_unit(n_test, f);
 	test->next = *lst;
 	*lst = test;
-	free(test);
 	(*i)++;
 }
 
@@ -59,12 +58,30 @@ static int		display_res(pid_t pid)
 	else if (WIFSIGNALED(pid))
 	{
 		if (WTERMSIG(pid) == SIGSEGV)
-			ft_putendl("[SEGV]");
+			colourize(YELLOW, "[SEGV]");
 		else if (WTERMSIG(pid) == SIGBUS)
-			ft_putendl("[BUSE]");
+			colourize(BLUE, "[BUSE]");
 		return (-1);
 	}
 	return (0);
+}
+
+static void		reverse(t_unit **head_ref)
+{
+	t_unit		*prev;
+	t_unit		*current;
+	t_unit		*next;
+
+	prev = NULL;
+	current = *head_ref;
+	while (current != NULL)
+	{
+		next = current->next;
+		current->next = prev;
+		prev = current;
+		current = next;
+	}
+	*head_ref = prev;
 }
 
 static int		exec_tests(int (f)(void))
@@ -73,9 +90,9 @@ static int		exec_tests(int (f)(void))
 
 	if ((pid = fork()) == 0)
 	{
-			if (f() == 0)
-				exit (0);
-			exit (-1);
+		if (f() == 0)
+			exit(0);
+		exit(1);
 	}
 	if (pid > 0)
 		wait(&pid);
@@ -88,6 +105,7 @@ int				launch_tests(t_unit **tests, int n_tests)
 	t_unit		*tmp;
 
 	res = 0;
+	reverse(tests);
 	tmp = *tests;
 	while (tmp)
 	{
@@ -101,6 +119,6 @@ int				launch_tests(t_unit **tests, int n_tests)
 	ft_putnbr(res);
 	ft_putstr(" / ");
 	ft_putnbr(n_tests);
-	ft_putstr(" test(s) passed");
+	ft_putstr(" test(s) passed\n");
 	return (res == n_tests ? 0 : -1);
 }

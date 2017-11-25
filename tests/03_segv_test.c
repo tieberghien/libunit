@@ -6,7 +6,7 @@
 /*   By: etieberg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 19:44:04 by etieberg          #+#    #+#             */
-/*   Updated: 2017/11/25 19:49:43 by etieberg         ###   ########.fr       */
+/*   Updated: 2017/11/25 23:21:59 by etieberg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 int		segv_test(void)
 {
-	char	str[5];
+	char	*str;
 
-	if (str[10] == 'a')
+	str = NULL;
+	if (str[0] == 'a')
 		return (0);
 	else
 		return (-1);
