@@ -1,20 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   00_launcher.c                                      :+:      :+:    :+:   */
+/*   04_s1_greater_test.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 09:45:32 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/25 10:46:39 by wbaridon         ###   ########.fr       */
+/*   Created: 2017/11/25 13:12:09 by wbaridon          #+#    #+#             */
+/*   Updated: 2017/11/25 13:12:36 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// Voir pour les includes
-#include	"libunit.h"
+#include "libft.h"
+#include <string.h>
 
-int		strlen_launcher(void)
+int		s1_greater_test(void)
 {
-
-	// creuser sur comment creer le launcher cf exemple
+	if (ft_strcmp("abz", "abc") == strcmp("abz", "abc"))
+		return (0);
+	else
+		return (-1);
 }
