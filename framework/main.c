@@ -6,7 +6,7 @@
 /*   By: etieberg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/24 23:01:29 by etieberg          #+#    #+#             */
-/*   Updated: 2017/11/25 18:20:04 by etieberg         ###   ########.fr       */
+/*   Updated: 2017/11/25 18:35:35 by etieberg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,11 @@ static t_unit	*create_test_unit(char *name_test, int (*f)(void))
 
 	if (!(test = (t_unit*)malloc(sizeof(t_unit))))
 		return (NULL);
+	if (name_test == NULL || f == 0)
+	{
+		free(test);
+		return (NULL);
+	}
 	test->test = ft_strdup(name_test);
 	test->f = f;
 	test->next = NULL;
@@ -31,6 +36,7 @@ void			load_tests(t_unit **lst, char *name_test, int (*f)(void), int *i)
 	test = create_test_unit(name_test, f); 
 	test->next = *lst;
 	*lst = test;
+	free(test);
 	(*i)++;
 }
 
@@ -65,7 +71,7 @@ static int		exec_tests(int (f)(void))
 	{
 			if (f() == 0)
 				exit (0);
-			exit (1);
+			exit (-1);
 	}
 	if (pid > 0)
 		wait(&pid);
@@ -87,6 +93,7 @@ int				launch_tests(t_unit **tests, int n_tests)
 			res++;
 		tmp = tmp->next;
 	}
+	free(tmp);
 	ft_putnbr(res);
 	ft_putstr(" / ");
 	ft_putndr(n_tests);
