@@ -17,8 +17,10 @@ int		space_testa(void)
 {
 	char dest1[100];
 	char dest2[100];
+	int	 result;
 
-	if (ft_strcpy(dest1, "   ") == strcpy(dest2, "   "))
+	result = ft_strcmp(ft_strcpy(dest1, "   "), strcpy(dest2, "   "));
+	if (result == 0)
 		return (0);
 	else
 		return (-1);

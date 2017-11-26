@@ -18,8 +18,10 @@ int		basic_testa(void)
 	char dest1[100];
 	char dest2[100];
 	char cpy[100] = "Copy this";
+	int	result;
 
-	if (ft_strcpy(dest1, cpy) == strcpy(dest2, cpy))
+	result = ft_strcmp(ft_strcpy(dest1, cpy),strcpy(dest2, cpy));
+	if (result == 0)
 		return (0);
 	else
 		return (-1);

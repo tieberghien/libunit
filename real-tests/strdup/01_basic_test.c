@@ -15,7 +15,7 @@
 
 int		basic_test9(void)
 {
-	if (ft_strdup("42 Test") == strdup("42 Test"))
+	if (ft_strcmp(ft_strdup("42 Test"), strdup("42 Test")) == 0)
 		return (0);
 	else
 		return (-1);

@@ -17,8 +17,10 @@ int		basic_testx(void)
 {
 	char	dest1[100];
 	char 	dest2[100];
+	int		resultx;
 	
-	if (ft_memcpy(dest1, "Petit test", 5) == memcpy(dest2, "Petit test", 5))
+	resultx = ft_strcmp(ft_memcpy(dest1, "Petit test", 5), memcpy(dest2, "Petit test", 5));
+	if (resultx == 0)
 		return (0);
 	else
 		return (-1);	

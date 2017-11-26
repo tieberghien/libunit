@@ -17,8 +17,10 @@ int		null_testz(void)
 {
 	char	basic_dest[50];
 	char	basic_dest1[50];
+	int		result;
 
-	if (ft_strcat(basic_dest, "") == strcat(basic_dest1, ""))
+	result = ft_strcmp(ft_strcat(basic_dest, ""), strcat(basic_dest1, ""));
+	if (result == 0)
 		return (0);
 	else
 		return (-1);

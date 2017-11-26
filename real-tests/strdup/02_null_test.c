@@ -15,7 +15,7 @@
 
 int		null_test9(void)
 {
-	if (ft_strdup("") == strdup(""))
+	if (ft_strcmp(ft_strdup(""), strdup("")) == 0)
 		return (0);
 	else
 		return (-1);

@@ -15,7 +15,7 @@
 
 int		s1_lower_test(void)
 {
-	if (ft_strcmp("abc", "azc") == strcmp("azc", "azc"))
+	if (ft_strcmp("abc", "azc") == strcmp("abc", "azc"))
 		return (0);
 	else
 		return (-1);
