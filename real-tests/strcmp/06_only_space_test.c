@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include "real_test.h"
+#include "real_test.h"
 #include <string.h>
 
 int		only_space_testa(void)
@@ -20,4 +20,4 @@ int		only_space_testa(void)
 	else
 		return (-1);
 }
-*/
+

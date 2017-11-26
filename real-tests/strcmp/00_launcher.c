@@ -26,7 +26,7 @@ int		strcmp_launcher(void)
 	load_tests(&test_lst, "Null test", &null_testz, &i);
 	load_tests(&test_lst, "S1 greater test", &s1_greater_test, &i);
 	load_tests(&test_lst, "S1 lower test", &s1_lower_test, &i);
-	//load_tests(&test_lst, "Only Space test", &only_space_testz, &i);
+	load_tests(&test_lst, "Only Space test", &only_space_testa, &i);
 	return (launch_tests(&test_lst, i));
 	
 }
