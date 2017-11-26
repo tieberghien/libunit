@@ -21,8 +21,8 @@ int		memset_launcher(void)
 	i = 0;
 	test_lst = NULL;
 	ft_putstr("MEMSET: \n");
-	load_tests(&test_lst, "Basic test", &basic_test, &i);
-	load_tests(&test_lst, "Null test", &null_test, &i);
+	load_tests(&test_lst, "Basic test", &basic_testq, &i);
+	load_tests(&test_lst, "Null test", &null_testq, &i);
 	load_tests(&test_lst, "Lenght zero test", &lenght_zero_test, &i);
 	return (launch_tests(&test_lst, i));
 	

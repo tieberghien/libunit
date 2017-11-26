@@ -91,4 +91,12 @@ int 	basic_testa(void);
 int 	only_space_testa(void);
 int 	null_testb(void);
 int 	basic_testb(void);
+int 	null_testz(void);
+int 	basic_testz(void);
+int 	space_testz(void);
+int 	null_testx(void);
+int 	basic_testx(void);
+int 	space_testx(void);
+int 	basic_testq(void);
+int 	null_testq(void);
 #endif

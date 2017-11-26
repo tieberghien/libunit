@@ -21,9 +21,9 @@ int		strcpy_launcher(void)
 	i = 0;
 	test_lst = NULL;
 	ft_putstr("STRCPY: \n");
-	load_tests(&test_lst, "Basic test", &basic_test, &i);
-	load_tests(&test_lst, "Null test", &null_test, &i);
-	load_tests(&test_lst, "Space test", &space_test, &i);
+	load_tests(&test_lst, "Basic test", &basic_testa, &i);
+	load_tests(&test_lst, "Null test", &null_testa, &i);
+	load_tests(&test_lst, "Space test", &space_testa, &i);
 	return (launch_tests(&test_lst, i));
 	
 }

@@ -6,14 +6,14 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 18:01:18 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 20:56:12 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 22:43:15 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <string.h>
 
-int		space_test(void)
+int		space_testx(void)
 {
 	char	dest1[100];
 	char 	dest2[100];

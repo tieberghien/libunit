@@ -13,7 +13,7 @@
 #include "libft.h"
 #include <ctype.h>
 
-int		digit_test333(void)
+int		digit_test3(void)
 {
 	if (ft_toupper('2') == toupper('2'))
 		return (0);

@@ -21,12 +21,12 @@ int		strcmp_launcher(void)
 	i = 0;
 	test_lst = NULL;
 	ft_putstr("STRCMP: \n");
-	load_tests(&test_lst, "Basic test", &basic_test, &i);
+	load_tests(&test_lst, "Basic test", &basic_testz, &i);
 	load_tests(&test_lst, "Unsigned  test", &unsigned_test, &i);	
-	load_tests(&test_lst, "Null test", &null_test, &i);
+	load_tests(&test_lst, "Null test", &null_testz, &i);
 	load_tests(&test_lst, "S1 greater test", &s1_greater_test, &i);
 	load_tests(&test_lst, "S1 lower test", &s1_lower_test, &i);
-	load_tests(&test_lst, "Only Space test", &only_space_test, &i);
+	//load_tests(&test_lst, "Only Space test", &only_space_testz, &i);
 	return (launch_tests(&test_lst, i));
 	
 }

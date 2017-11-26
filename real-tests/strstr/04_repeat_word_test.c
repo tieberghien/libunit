@@ -15,8 +15,8 @@
 
 int		repeat_word_test(void)
 {
-	if (ft_strstr("Premier pe pe pe t petit test pet", "pe")
-	== strstr("Premierpe pe pe pe t  petit test pet", "pe"))
+	if (ft_strstr("Premier pe pe", "pe")
+	== strstr("Premier pe pe", "pe"))
 		return (0);
 	else
 		return (-1);

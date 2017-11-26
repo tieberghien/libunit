@@ -13,7 +13,7 @@
 #include "libft.h"
 #include <string.h>
 
-int		basic_test(void)
+int		basic_testq(void)
 {
 	char	str[50] = "A basic test of memset";
 	if (ft_memset(str, 'a', 4) == memset(str, 'a', 4))

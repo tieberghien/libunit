@@ -15,8 +15,8 @@
 
 int		begin_needle_test(void)
 {
-	if (ft_strstr("Premierpe pe pe t petit test pet", "pet")
-	== strstr("Premierpe pe pe t  petit test pet", "pet"))
+	if (ft_strstr("Premierpe pet", "pet")
+	== strstr("Premierpe pet", "pet"))
 		return (0);
 	else
 		return (-1);

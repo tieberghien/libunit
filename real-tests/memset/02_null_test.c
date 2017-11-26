@@ -13,7 +13,7 @@
 #include "libft.h"
 #include <string.h>
 
-int		null_test(void)
+int		null_testq(void)
 {
 	char	str[50] = "";
 	if (ft_memset(&str, ' ', 4) == memset(&str, ' ', 4))

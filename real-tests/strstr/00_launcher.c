@@ -21,9 +21,9 @@ int		strstr_launcher(void)
 	i = 0;
 	test_lst = NULL;
 	ft_putstr("STRSTR: \n");
-	load_tests(&test_lst, "Basic test", &basic_test, &i);
-	load_tests(&test_lst, "Null test", &null_test, &i);
-	load_tests(&test_lst, "Space test", &space_test, &i);
+	load_tests(&test_lst, "Basic test", &basic_test5, &i);
+	load_tests(&test_lst, "Null test", &null_test5, &i);
+	load_tests(&test_lst, "Space test", &space_test5, &i);
 	load_tests(&test_lst, "Repeat word test", &repeat_word_test, &i);
 	load_tests(&test_lst, "Begin needle test", &begin_needle_test, &i);
 	load_tests(&test_lst, "No found test", &no_found_test, &i);

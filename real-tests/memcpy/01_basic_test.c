@@ -6,14 +6,14 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 16:25:48 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 20:55:54 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 22:42:51 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <string.h>
 
-int		basic_test(void)
+int		basic_testx(void)
 {
 	char	dest1[100];
 	char 	dest2[100];
