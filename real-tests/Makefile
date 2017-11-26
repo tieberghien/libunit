@@ -6,7 +6,7 @@
 #    By: etieberg <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/25 22:01:31 by etieberg          #+#    #+#              #
-#    Updated: 2017/11/26 21:48:44 by etieberg         ###   ########.fr        #
+#    Updated: 2017/11/26 23:31:29 by wbaridon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -83,10 +83,6 @@ SRC			=	main.c				\
 				strlen/00_launcher.c \
 				strlen/01_basic_test.c \
 				strlen/02_null_test.c \
-				strncat/00_launcher.c \
-				strncat/01_basic_test.c \
-				strncat/02_null_test.c \
-				strncat/03_space_test.c \
 				strstr/00_launcher.c \
 				strstr/01_basic_test.c \
 				strstr/02_null_test.c \

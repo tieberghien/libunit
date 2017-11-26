@@ -6,7 +6,7 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/26 17:11:16 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 19:14:47 by etieberg         ###   ########.fr       */
+/*   Updated: 2017/11/26 23:32:43 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ int		main(void)
 		strcpy_launcher();
 		strdup_launcher();
 		strlen_launcher();
-		strncat_launcher();
 		strstr_launcher();
 		tolower_launcher();
 		toupper_launcher();
