@@ -5,16 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 09:45:32 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/25 10:46:39 by wbaridon         ###   ########.fr       */
+/*   Created: 2017/11/25 11:07:32 by wbaridon          #+#    #+#             */
+/*   Updated: 2017/11/26 09:38:13 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// Voir pour les includes
-#include	"libunit.h"
+// voir pour les includes
+#include "libunit.h"
 
 int		strlen_launcher(void)
 {
+	int				i;
+	t_unit		*test_lst;
 
-	// creuser sur comment creer le launcher cf exemple
+	i = 0;
+	test_lst = NULL;
+	ft_putstr("STRLEN: \n");
+	load_test(&test_lst, "Basic test", &basic_test, &i);
+	load_test(&test_lst, "Null test", &null_test, &i);
+	return (launch_tests(&test_lst, i));
+	
 }
