@@ -6,7 +6,7 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/26 15:16:02 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 15:16:05 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 20:54:33 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 int		null_test(void)
 {
-	char	str = "";
-	if (ft_memset(str, "", 4) == memset(str, "", 4))
-		return (0)
+	char	str[50] = "";
+	if (ft_memset(&str, ' ', 4) == memset(&str, ' ', 4))
+		return (0);
 	else
 		return (1);
 }

@@ -21,11 +21,11 @@ int		tolower_launcher(void)
 	i = 0;
 	test_lst = NULL;
 	ft_putstr("TOLOWER: \n");
-	load_test(&test_lst, "Basic test", &basic_test, &i);
-	load_test(&test_lst, "Null test", &null_test, &i);	
-	load_test(&test_lst, "Minletter test", &minletter_test, &i);
-	load_test(&test_lst, "Space test", &space_test, &i);
-	load_test(&test_lst, "Number test", &number_test, &i);
+	load_tests(&test_lst, "Basic test", &basic_test, &i);
+	load_tests(&test_lst, "Null test", &null_test, &i);	
+	load_tests(&test_lst, "Minletter test", &minletter_test, &i);
+	load_tests(&test_lst, "Space test", &space_test, &i);
+	load_tests(&test_lst, "Number test", &number_test, &i);
 	return (launch_tests(&test_lst, i));
 	
 }

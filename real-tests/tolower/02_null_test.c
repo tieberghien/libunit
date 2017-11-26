@@ -6,7 +6,7 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 17:54:06 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/25 17:54:24 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 20:37:32 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int		null_test(void)
 {
-	if (ft_tolower('') == tolower(''))
+	if (ft_tolower(' ') == tolower(' '))
 		return (0);
 	else
 		return (-1);

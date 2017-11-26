@@ -6,7 +6,7 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/26 15:17:35 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 15:17:38 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 20:53:51 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 int		lenght_zero_test(void)
 {
-	char	str = "A basic test of memset";
-	if (ft_memset(str, "a", 0) == memset(str, "a", 0))
-		return (0)
+	char	str[50] = "A basic test of memset";
+	if (ft_memset(&str, 'a', 0) == memset(&str, 'a', 0))
+		return (0);
 	else
 		return (1);
 }

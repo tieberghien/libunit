@@ -6,7 +6,7 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 15:16:37 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/25 17:22:57 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 20:57:51 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int		null_test(void)
 {
-	if (ft_isdigit("") == isdigit(""))
+	if (ft_isdigit(' ') == isdigit(' '))
 		return (0);
 	else
 		return (-1);

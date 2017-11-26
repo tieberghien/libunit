@@ -6,7 +6,7 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/26 17:15:26 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 17:45:22 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 20:55:38 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,4 +45,16 @@ int		one_positive_test(void);
 int		digit_test(void);
 int		upperletter_test(void);
 int		space_test(void);
+int		letter_and_digit_test(void);
+int		number_test(void);
+int		minletter_test(void);
+int		no_found_test(void);
+int		begin_needle_test(void);
+int		repeat_word_test(void);
+int		free_test(void);
+int		no_memory_test(void);
+int		s1_greater_test(void);
+int		unsigned_test(void);
+int		s1_lower_test(void);
+int		lenght_zero_test(void);
 #endif

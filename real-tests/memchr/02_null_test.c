@@ -6,7 +6,7 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 16:20:30 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/25 16:20:51 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 20:57:10 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int		null_test(void)
 {
-	if (ft_memchr("","t",5) == memchr("", "t", 5))
+	if (ft_memchr("",'t',5) == memchr("", 't', 5))
 		 return (0);
 	 else
 		return (-1);	 

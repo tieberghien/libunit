@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// Voir pour les includes a rajouter
+#include "libft.h"
+#include <string.h>
 
 int		basic_test(void)
 {

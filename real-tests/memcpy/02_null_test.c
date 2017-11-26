@@ -6,7 +6,7 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 18:00:48 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/25 18:01:08 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 20:56:03 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@ int		null_test(void)
 	if (ft_memcpy(dest1, "", 5) == memcpy(dest2, "", 5))
 		return (0);
 	else
-		return (-1)	
+		return (-1);	
 }

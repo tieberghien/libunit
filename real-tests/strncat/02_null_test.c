@@ -6,7 +6,7 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 18:11:23 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/25 18:12:24 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 20:42:02 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int		null_test(void)
 	char 	dest[100];
 	char	dest1[100];
 
-	if (strncat(dest,"", 10) == ft_strncat(dest, "", 10))
+	if (strncat(dest,"", 10) == ft_strncat(dest1, "", 10))
 		return (0);
 	else
 		return (-1);

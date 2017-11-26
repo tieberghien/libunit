@@ -6,7 +6,7 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 15:16:37 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/25 17:12:23 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 20:59:19 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int		null_test(void)
 {
-	if (ft_isalpha("") == isalpha(""))
+	if (ft_isalpha(' ') == isalpha(' '))
 		return (0);
 	else
 		return (-1);

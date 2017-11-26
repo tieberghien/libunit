@@ -21,10 +21,10 @@ int		strdup_launcher(void)
 	i = 0;
 	test_lst = NULL;
 	ft_putstr("STRDUP: \n");
-	load_test(&test_lst, "Basic test", &basic_test, &i);
-	load_test(&test_lst, "Null test", &null_test, &i);
-	load_test(&test_lst, "No memory test", &nomemory_test, &i);
-	load_test(&test_lst, "free test", &free_test, &i);
+	load_tests(&test_lst, "Basic test", &basic_test, &i);
+	load_tests(&test_lst, "Null test", &null_test, &i);
+	load_tests(&test_lst, "No memory test", &no_memory_test, &i);
+	load_tests(&test_lst, "free test", &free_test, &i);
 	return (launch_tests(&test_lst, i));
 	
 }
