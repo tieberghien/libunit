@@ -6,7 +6,7 @@
 /*   By: etieberg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 19:43:16 by etieberg          #+#    #+#             */
-/*   Updated: 2017/11/26 18:31:06 by etieberg         ###   ########.fr       */
+/*   Updated: 2017/11/26 22:30:53 by etieberg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ int			test_launcher(void)
 	i = 0;
 	test_lst = NULL;
 	ft_putstr("TEST: \n");
-	load_tests(&test_lst, "OK test", &ok_test, &i);
-	load_tests(&test_lst, "KO test", &ko_test, &i);
-	load_tests(&test_lst, "SEGV test", &segv_test, &i);
-	load_tests(&test_lst, "BUSE test", &buse_test, &i);
-	load_tests(&test_lst, "TIMEOUT test", &timeout_test, &i);
-	load_tests(&test_lst, "ABORT test", &abort_test, &i);
+	load_tests(&test_lst, "\t> OK test", &ok_test, &i);
+	load_tests(&test_lst, "\t> KO test", &ko_test, &i);
+	load_tests(&test_lst, "\t> SEGV test", &segv_test, &i);
+	load_tests(&test_lst, "\t> BUSE test", &buse_test, &i);
+	load_tests(&test_lst, "\t> TIMEOUT test", &timeout_test, &i);
+	load_tests(&test_lst, "\t> ABORT test", &abort_test, &i);
 	return (launch_tests(&test_lst, i));
 }
