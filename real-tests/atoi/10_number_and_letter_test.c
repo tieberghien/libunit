@@ -12,6 +12,7 @@
 
 #include	"libft.h"
 #include	<stdlib.h>
+#include "real_test.h"
 
 int		number_and_letter_test(void)
 {
