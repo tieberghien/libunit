@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   05_time_test.c                                     :+:      :+:    :+:   */
+/*   02_null_test.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: etieberg <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 19:52:06 by etieberg          #+#    #+#             */
-/*   Updated: 2017/11/25 22:18:55 by etieberg         ###   ########.fr       */
+/*   Created: 2017/11/25 18:11:23 by wbaridon          #+#    #+#             */
+/*   Updated: 2017/11/25 18:12:24 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "test.h"
+#include "libft.h"
+#include <string.h>
 
-int		timeout_test(void)
+int		null_test(void)
 {
-	while (42)
-		;
-	if (0)
+	char 	dest[100];
+	char	dest1[100];
+
+	if (strncat(dest,"", 10) == ft_strncat(dest, "", 10))
 		return (0);
 	else
 		return (-1);

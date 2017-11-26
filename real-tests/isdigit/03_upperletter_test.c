@@ -1,23 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   04_buse_test.c                                     :+:      :+:    :+:   */
+/*   03_upperletter_test.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: etieberg <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 19:44:17 by etieberg          #+#    #+#             */
-/*   Updated: 2017/11/25 23:24:21 by etieberg         ###   ########.fr       */
+/*   Created: 2017/11/25 15:16:01 by wbaridon          #+#    #+#             */
+/*   Updated: 2017/11/25 17:22:42 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "test.h"
+#include "libft.h"
+#include <ctype.h>
 
-int			buse_test(void)
+int		upperletter_test(void)
 {
-	char	*str;
-
-	str = "djfdjkfgdfk";
-	if ((str[0] = 'a'))
+	if (ft_isdigit("M") == isdigit("M"))
 		return (0);
 	else
 		return (-1);

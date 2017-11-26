@@ -1,20 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   02_ko_test.c                                       :+:      :+:    :+:   */
+/*   04_space_test.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: etieberg <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 19:43:50 by etieberg          #+#    #+#             */
-/*   Updated: 2017/11/25 22:59:23 by etieberg         ###   ########.fr       */
+/*   Created: 2017/11/25 17:55:07 by wbaridon          #+#    #+#             */
+/*   Updated: 2017/11/25 17:55:22 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "test.h"
+#include "libft.h"
+#include <ctype.h>
 
-int		ko_test(void)
+int		space_test(void)
 {
-	if (ft_strlen("lol") == ft_strlen("sdkfhsklfsd"))
+	if (ft_tolower(' ') == tolower(' '))
 		return (0);
 	else
 		return (-1);

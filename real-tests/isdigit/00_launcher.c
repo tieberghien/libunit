@@ -3,27 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   00_launcher.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: etieberg <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 19:43:16 by etieberg          #+#    #+#             */
-/*   Updated: 2017/11/25 23:29:28 by etieberg         ###   ########.fr       */
+/*   Created: 2017/11/25 11:07:32 by wbaridon          #+#    #+#             */
+/*   Updated: 2017/11/26 08:43:40 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "test.h"
+// voir pour les includes
+#include "libunit.h"
 
-int			test_launcher(void)
+int		isdigit_launcher(void)
 {
-	int		i;
-	t_unit	*test_lst;
+	int				i;
+	t_unit		*test_lst;
 
 	i = 0;
 	test_lst = NULL;
-	ft_putstr("TEST: \n");
-	load_tests(&test_lst, "OK test", &ok_test, &i);
-	load_tests(&test_lst, "KO test", &ko_test, &i);
-	load_tests(&test_lst, "SEGV test", &segv_test, &i);
-	load_tests(&test_lst, "BUSE test", &buse_test, &i);
-//	load_tests(&test_lst, "TIMEOUT test", &timeout_test, &i);
+	ft_putstr("ISDIGIT: \n");
+	load_test(&test_lst, "Basic test", &basic_test, &i);
+	load_test(&test_lst, "Digit test", &digit_test, &i);	
+	load_test(&test_lst, "Upperletter test", &upperletter_test, &i);
+	load_test(&test_lst, "Null test", &null_test, &i);
+	load_test(&test_lst, "Space test", &space_test, &i);
 	return (launch_tests(&test_lst, i));
+	
 }

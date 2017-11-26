@@ -1,23 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   03_segv_test.c                                     :+:      :+:    :+:   */
+/*   09_only_letter_test.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: etieberg <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 19:44:04 by etieberg          #+#    #+#             */
-/*   Updated: 2017/11/25 23:21:59 by etieberg         ###   ########.fr       */
+/*   Created: 2017/11/25 11:12:31 by wbaridon          #+#    #+#             */
+/*   Updated: 2017/11/25 11:13:12 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "test.h"
+#include	"libft.h"
+#include	<stdlib.h>
 
-int		segv_test(void)
+int		only_letter_test(void)
 {
-	char	*str;
-
-	str = NULL;
-	if (str[0] == 'a')
+	if (ft_atoi("abc") == atoi("abc"))
 		return (0);
 	else
 		return (-1);

@@ -1,20 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   01_ok_test.c                                       :+:      :+:    :+:   */
+/*   03_space_test.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: etieberg <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 19:43:30 by etieberg          #+#    #+#             */
-/*   Updated: 2017/11/25 19:47:18 by etieberg         ###   ########.fr       */
+/*   Created: 2017/11/25 17:31:55 by wbaridon          #+#    #+#             */
+/*   Updated: 2017/11/25 17:32:26 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "test.h"
+#include "libft.h"
+#include <string.h>
 
-int		ok_test(void)
+int		space_test(void)
 {
-	if (ft_atoi("42") == atoi("42"))
+	if (ft_strstr("Premier petit test", " ") == strstr("Premier petit test", " "))
 		return (0);
 	else
 		return (-1);
