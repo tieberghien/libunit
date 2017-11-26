@@ -6,15 +6,11 @@
 #    By: etieberg <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/25 22:01:31 by etieberg          #+#    #+#              #
-<<<<<<< HEAD
-#    Updated: 2017/11/26 17:57:21 by etieberg         ###   ########.fr        #
-=======
-#    Updated: 2017/11/26 18:23:20 by wbaridon         ###   ########.fr        #
->>>>>>> d84626ef9adcd72c7975db0a36d4b81aca7a3c1b
+#    Updated: 2017/11/26 19:15:47 by etieberg         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=   tests
+NAME		=   real_tests
 CC			=	gcc
 CFLAGS		=	-g -Wall -Werror -Wextra
 
@@ -26,7 +22,8 @@ FWPATH		=	../libunit.a
 INC_DIR		=	../includes
 INC			=	-I $(INC_DIR) -I $(LIB_PATH)/includes -I ../includes
 
-SRC			=	atoi/00_launcher.c \
+SRC			=	main.c		\
+				atoi/00_launcher.c \
 				atoi/01_basic_test.c \
 				atoi/02_null_test.c \
 				atoi/03_negative_number_test.c \
@@ -37,7 +34,7 @@ SRC			=	atoi/00_launcher.c \
 				atoi/08_space_with_number_test.c \
 				atoi/09_only_letter_test.c \
 				atoi/10_number_and_letter_test.c \
-				atoi/11_one_positive_test.c \
+				atoi/11_one_positive_test.c	\
 				isalpha/00_launcher.c \
 				isalpha/01_basic_test.c \
 				isalpha/02_digit_test.c \
@@ -110,13 +107,8 @@ SRC			=	atoi/00_launcher.c \
 				toupper/05_letter_and_digit_test.c \
 				toupper/06_space_test.c
 
-SRC_MAIN	=	main.c
-
 OBJ_DIR		=	obj
-OBJS		=	$(addprefix $(OBJ_DIR)/, $(SRC:.c=.o))
-OBJS		=	$(addprefix $(OBJ_DIR)/, $(SRC_MAIN:.c=.o))
-
-SRCS		=	$(addprefix $(SRC_DIR)/, $(SRC))
+OBJS		=	$(SRC:.c=.o)
 
 all: $(NAME)
 
@@ -124,15 +116,13 @@ $(NAME): $(OBJ_DIR) $(LIB) $(OBJS)
 
 test: $(NAME)
 	@$(CC) $(CFLAGS) $(OBJS) $(LIB) $(FWPATH) -o $(NAME)
+#	mv $(OBJS) $(OBJ_DIR)
 	@./$(NAME)
 
 $(LIB):
 	make -C $(LIB_PATH) re
 
-$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
-	$(CC) $(CFLAGS) $< $(INC) -c -o $@
-
-$(OBJ_DIR)/%.o: %.c
+$(OBJS): $(SRC)
 	$(CC) $(CFLAGS) $< $(INC) -c -o $@
 
 $(OBJ_DIR):
