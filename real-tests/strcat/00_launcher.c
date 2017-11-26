@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// voir pour les includes
+#include "real_test.h"
 #include "libunit.h"
 
 int		strcat_launcher(void)
