@@ -6,11 +6,12 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 09:43:49 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/25 09:45:18 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 20:42:44 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// VOIR pour les includes
+#include "libft.h"
+#include <string.h>
 
 int		null_test(void)
 {

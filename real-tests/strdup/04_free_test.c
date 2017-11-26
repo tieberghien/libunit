@@ -6,7 +6,7 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 13:26:43 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/25 13:27:45 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 21:01:57 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,12 @@
 
 int		free_test(void)
 {
-	// possible de tester comme cela ? a checker lorsque mini framework sera good
-	if (free(ft_strdup("42 Test")) == free(strdup("42 Test")))
+	char	*str1;
+	char	*str2;
+
+	str1 = ft_strdup("Free");
+	str2 = strdup("Free");
+	if (str1 == str2)
 		return (0);
 	else
 		return (-1);

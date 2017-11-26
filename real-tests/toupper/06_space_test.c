@@ -6,7 +6,7 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 15:18:27 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/25 15:18:50 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 20:27:41 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int		space_test(void)
 {
-	if (ft_toupper("ma  j") == toupper("ma  j"))
+	if (ft_toupper(' ') == toupper(' '))
 		return (0);
 	else
 		return (-1);

@@ -6,7 +6,7 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 15:08:07 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/25 17:11:18 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 21:00:05 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int		basic_test(void)
 {
-	if (ft_isalpha("a") == isalpha("a"))
+	if (ft_isalpha('a') == isalpha('a'))
 		return (0);
 	else
 		return (-1);
