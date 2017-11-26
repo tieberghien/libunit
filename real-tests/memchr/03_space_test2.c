@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   01_basic_test.c                                    :+:      :+:    :+:   */
+/*   03_space_test.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 15:08:07 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 21:00:05 by wbaridon         ###   ########.fr       */
+/*   Created: 2017/11/25 16:21:22 by wbaridon          #+#    #+#             */
+/*   Updated: 2017/11/26 22:20:57 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <ctype.h>
+#include <string.h>
 
-int		basic_test(void)
+int		space_test2(void)
 {
-	if (ft_isalpha('a') == isalpha('a'))
-		return (0);
-	else
-		return (-1);
+	if (ft_memchr("  ",'t',5) == memchr("  ", 't', 5))
+		 return (0);
+	 else
+		return (-1);	 
 }

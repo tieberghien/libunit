@@ -6,14 +6,14 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 15:14:32 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 20:34:14 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 22:22:38 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <ctype.h>
 
-int		digit_test(void)
+int		digit_test333(void)
 {
 	if (ft_toupper('2') == toupper('2'))
 		return (0);

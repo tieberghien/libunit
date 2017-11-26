@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   02_null_test.c                                     :+:      :+:    :+:   */
+/*   02_digit_test.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 16:20:30 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 20:57:10 by wbaridon         ###   ########.fr       */
+/*   Created: 2017/11/25 15:14:32 by wbaridon          #+#    #+#             */
+/*   Updated: 2017/11/26 22:10:09 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <string.h>
+#include "real_test.h"
+#include <ctype.h>
 
-int		null_test(void)
+int		digit_test1(void)
 {
-	if (ft_memchr("",'t',5) == memchr("", 't', 5))
-		 return (0);
-	 else
-		return (-1);	 
+	if (ft_isalpha('2') == isalpha('2'))
+		return (0);
+	else
+		return (-1);
 }

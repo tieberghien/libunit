@@ -37,11 +37,11 @@ SRC			=	main.c				\
 				atoi/10_number_and_letter_test.c \
 				atoi/11_one_positive_test.c \
 				isalpha/00_launcher.c \
-				isalpha/01_basic_test.c \
-				isalpha/02_digit_test.c \
-				isalpha/03_upperletter_test.c \
-				isalpha/04_null_test.c \
-				isalpha/05_space_test.c \
+				isalpha/01_basic_test1.c \
+				isalpha/02_digit_test1.c \
+				isalpha/03_upperletter_test1.c \
+				isalpha/04_null_test1.c \
+				isalpha/05_space_test1.c \
 				isdigit/00_launcher.c \
 				isdigit/01_basic_test.c \
 				isdigit/02_digit_test.c \
@@ -49,9 +49,9 @@ SRC			=	main.c				\
 				isdigit/04_null_test.c \
 				isdigit/05_space_test.c \
 				memchr/00_launcher.c \
-				memchr/01_basic_test.c \
-				memchr/02_null_test.c \
-				memchr/03_space_test.c \
+				memchr/01_basic_test2.c \
+				memchr/02_null_test2.c \
+				memchr/03_space_test2.c \
 				memcpy/00_launcher.c \
 				memcpy/01_basic_test.c \
 				memcpy/02_null_test.c \

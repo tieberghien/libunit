@@ -6,14 +6,14 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 17:13:03 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 20:59:03 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 22:10:45 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "real_test.h"
 #include <ctype.h>
 
-int		space_test(void)
+int		space_test1(void)
 {
 	if (ft_isalpha(' ') == isalpha(' '))
 		return (0);

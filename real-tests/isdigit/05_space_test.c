@@ -6,14 +6,14 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 17:13:03 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/25 17:23:28 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 22:29:32 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <ctype.h>
 
-int		space_test(void)
+int		space_test7(void)
 {
 	if (ft_isdigit(' ') == isdigit(' '))
 		return (0);

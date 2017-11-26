@@ -6,14 +6,14 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 17:31:25 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/25 17:31:44 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 22:26:38 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <string.h>
 
-int		null_test(void)
+int		null_test5(void)
 {
 	if (ft_strstr("", "petit") == strstr("", "petit"))
 		return (0);

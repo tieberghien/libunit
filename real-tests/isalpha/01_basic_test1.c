@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   04_null_test.c                                     :+:      :+:    :+:   */
+/*   01_basic_test.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 15:16:37 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 20:59:19 by wbaridon         ###   ########.fr       */
+/*   Created: 2017/11/25 15:08:07 by wbaridon          #+#    #+#             */
+/*   Updated: 2017/11/26 22:14:31 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "real_test.h"
 #include <ctype.h>
 
-int		null_test(void)
+int		basic_test1(void)
 {
-	if (ft_isalpha(' ') == isalpha(' '))
+	if (ft_isalpha('a') == isalpha('a'))
 		return (0);
 	else
 		return (-1);

@@ -6,14 +6,15 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 17:54:06 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 20:37:32 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 22:25:07 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <ctype.h>
 
-int		null_test(void)
+int		null_test4(void)
+
 {
 	if (ft_tolower(' ') == tolower(' '))
 		return (0);

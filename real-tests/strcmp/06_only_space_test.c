@@ -6,14 +6,14 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 13:14:35 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/25 13:15:03 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 22:33:49 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "real_test.h"
 #include <string.h>
 
-int		only_space_test(void)
+int		only_space_testa(void)
 {
 	if (ft_strcmp("  ", "  ") == strcmp("  ", "  "))
 		return (0);

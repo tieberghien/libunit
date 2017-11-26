@@ -6,14 +6,14 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 15:08:07 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 20:58:31 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 22:29:04 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <ctype.h>
 
-int		basic_test(void)
+int		basic_test7(void)
 {
 	if (ft_isdigit('2') == isdigit('2'))
 		return (0);

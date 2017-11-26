@@ -6,14 +6,14 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 13:23:31 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/25 13:23:46 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 22:31:48 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <string.h>
 
-int		null_test(void)
+int		null_test9(void)
 {
 	if (ft_strdup("") == strdup(""))
 		return (0);

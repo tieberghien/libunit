@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   03_space_test.c                                    :+:      :+:    :+:   */
+/*   02_null_test.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 16:21:22 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 20:56:57 by wbaridon         ###   ########.fr       */
+/*   Created: 2017/11/25 16:20:30 by wbaridon          #+#    #+#             */
+/*   Updated: 2017/11/26 22:20:46 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <string.h>
 
-int		space_test(void)
+int		null_test2(void)
 {
-	if (ft_memchr("  ",'t',5) == memchr("  ", 't', 5))
+	if (ft_memchr("",'t',5) == memchr("", 't', 5))
 		 return (0);
 	 else
 		return (-1);	 
