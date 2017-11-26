@@ -17,8 +17,9 @@ int		basic_testa(void)
 {
 	char dest1[100];
 	char dest2[100];
+	char cpy[100] = "Copy this";
 
-	if (ft_strcpy(dest1, "Copie cela") == strcpy(dest2, "Copie cela"))
+	if (ft_strcpy(dest1, cpy) == strcpy(dest2, cpy))
 		return (0);
 	else
 		return (-1);
