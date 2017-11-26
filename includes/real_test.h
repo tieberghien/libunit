@@ -6,7 +6,7 @@
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/26 17:15:26 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 17:45:22 by wbaridon         ###   ########.fr       */
+/*   Updated: 2017/11/26 19:09:08 by etieberg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,4 +45,5 @@ int		one_positive_test(void);
 int		digit_test(void);
 int		upperletter_test(void);
 int		space_test(void);
+
 #endif

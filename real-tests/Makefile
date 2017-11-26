@@ -6,7 +6,7 @@
 #    By: etieberg <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/25 22:01:31 by etieberg          #+#    #+#              #
-#    Updated: 2017/11/26 19:56:57 by etieberg         ###   ########.fr        #
+#    Updated: 2017/11/26 20:00:26 by etieberg         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -140,7 +140,7 @@ SRC_TUP		=	00_launcher.c \
 
 OBJ_DIR		=	obj
 
-OBJS		=	$(notdir %(SRCS:.c=.o))
+OBJS		=	$(notdir $(SRCS:.c=.o))
 #OBJS        =   $(addprefix $(OBJ_DIR)/, $(SRCS:.c=.o))
 #OBJS        +=  $(addprefix $(OBJ_DIR)/, $(SRC_MAIN:.c=.o))
 
@@ -172,7 +172,7 @@ test: $(NAME)
 $(LIB):
 	make -C $(LIB_PATH) re
 
-$(OBJ_DIR)/%.o: $(DIR_ATOI)/%.c
+$(OBJ_DIR)/%.o: $(SRCS)/%.c
 	$(CC) $(CFLAGS) $< $(INC) -c -o $@
 
 $(OBJ_DIR)/%.o: %.c
