@@ -1,29 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   00_launcher.c                                      :+:      :+:    :+:   */
+/*   02_null_test.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 11:07:32 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 15:18:34 by wbaridon         ###   ########.fr       */
+/*   Created: 2017/11/26 15:16:02 by wbaridon          #+#    #+#             */
+/*   Updated: 2017/11/26 15:16:05 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// voir pour les includes
-#include "libunit.h"
+#include "libft.h"
+#include <string.h>
 
-int		memset_launcher(void)
+int		null_test(void)
 {
-	int				i;
-	t_unit		*test_lst;
-
-	i = 0;
-	test_lst = NULL;
-	ft_putstr("MEMSET: \n");
-	load_test(&test_lst, "Basic test", &basic_test, &i);
-	load_test(&test_lst, "Null test", &null_test, &i);
-	load_test(&test_lst, "Lenght zero test", &lenght_zero_test, &i);
-	return (launch_tests(&test_lst, i));
-	
+	char	str = "";
+	if (ft_memset(str, "", 4) == memset(str, "", 4))
+		return (0)
+	else
+		return (1);
 }
