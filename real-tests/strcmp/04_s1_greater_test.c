@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   01_basic_test.c                                    :+:      :+:    :+:   */
+/*   04_s1_greater_test.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 10:50:43 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 17:30:25 by wbaridon         ###   ########.fr       */
+/*   Created: 2017/11/25 13:12:09 by wbaridon          #+#    #+#             */
+/*   Updated: 2017/11/25 13:12:36 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"libft.h"
-#include	<stdlib.h>
+#include "libft.h"
+#include <string.h>
 
-int		basic_test(void)
+int		s1_greater_test(void)
 {
-	if (ft_atoi("42") == atoi("42"))
+	if (ft_strcmp("abz", "abc") == strcmp("abz", "abc"))
 		return (0);
 	else
 		return (-1);

@@ -1,22 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   01_basic_test.c                                    :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 10:50:43 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 17:30:25 by wbaridon         ###   ########.fr       */
+/*   Created: 2017/11/26 17:11:16 by wbaridon          #+#    #+#             */
+/*   Updated: 2017/11/26 17:50:01 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"libft.h"
-#include	<stdlib.h>
+#include "real_test.h"
 
-int		basic_test(void)
+int		main(void)
 {
-	if (ft_atoi("42") == atoi("42"))
+		atoi_launcher();
+		isalpha_launcher();
+		isdigit_launcher();
+		memchr_launcher();
+		memcpy_launcher();
+		memset_launcher();
+		strcat_launcher();
+		strcmp_launcher();
+		strcpy_launcher();
+		strdup_launcher();
+		strlen_launcher();
+		strncat_launcher();
+		strstr_launcher();
+		tolower_launcher();
+		toupper_launcher();
 		return (0);
-	else
-		return (-1);
 }

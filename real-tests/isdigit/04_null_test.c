@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   01_basic_test.c                                    :+:      :+:    :+:   */
+/*   04_null_test.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 10:50:43 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 17:30:25 by wbaridon         ###   ########.fr       */
+/*   Created: 2017/11/25 15:16:37 by wbaridon          #+#    #+#             */
+/*   Updated: 2017/11/25 17:22:57 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"libft.h"
-#include	<stdlib.h>
+#include "libft.h"
+#include <ctype.h>
 
-int		basic_test(void)
+int		null_test(void)
 {
-	if (ft_atoi("42") == atoi("42"))
+	if (ft_isdigit("") == isdigit(""))
 		return (0);
 	else
 		return (-1);

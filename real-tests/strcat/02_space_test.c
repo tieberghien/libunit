@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   01_basic_test.c                                    :+:      :+:    :+:   */
+/*   02_space_test.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 10:50:43 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 17:30:25 by wbaridon         ###   ########.fr       */
+/*   Created: 2017/11/25 18:08:19 by wbaridon          #+#    #+#             */
+/*   Updated: 2017/11/25 18:08:27 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"libft.h"
-#include	<stdlib.h>
+#include "libft.h"
+#include <string.h>
 
-int		basic_test(void)
+int		space_test(void)
 {
-	if (ft_atoi("42") == atoi("42"))
+	char	basic_dest[50];
+	char	basic_dest1[50];
+	char	basic_src = "   ";
+	char	basic_src1 = "   ";
+
+	if (ft_strcat(basic_dest, basic_src) == strcat(basic_dest1, basic_src1))
 		return (0);
 	else
 		return (-1);

@@ -1,21 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   01_basic_test.c                                    :+:      :+:    :+:   */
+/*   02_null_test.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 10:50:43 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 17:30:25 by wbaridon         ###   ########.fr       */
+/*   Created: 2017/11/25 17:48:01 by wbaridon          #+#    #+#             */
+/*   Updated: 2017/11/25 17:48:21 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"libft.h"
-#include	<stdlib.h>
+#include "libft.h"
+#include <string.h>
 
-int		basic_test(void)
+int		null_test(void)
 {
-	if (ft_atoi("42") == atoi("42"))
+	char dest1[100];
+	char dest2[100];
+
+	if (ft_strcpy(dest1, "") == strcpy(dest2, ""))
 		return (0);
 	else
 		return (-1);

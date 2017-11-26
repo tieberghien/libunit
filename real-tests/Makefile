@@ -6,7 +6,7 @@
 #    By: etieberg <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/25 22:01:31 by etieberg          #+#    #+#              #
-#    Updated: 2017/11/26 17:33:08 by wbaridon         ###   ########.fr        #
+#    Updated: 2017/11/26 17:38:17 by wbaridon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,9 +22,9 @@ FWPATH		=	../libunit.a
 INC_DIR		=	../includes
 INC			=	-I $(INC_DIR) -I $(LIB_PATH)/includes -I ../includes
 
-SRC_DIR		=	strlen
+SRC_DIR		=	atoi
 SRC			=	00_launcher.c	\
-				01_ok_test.c	\
+			#	01_ok_test.c	\
 				02_ko_test.c	\
 				03_segv_test.c	\
 				04_buse_test.c	\
@@ -32,7 +32,7 @@ SRC			=	00_launcher.c	\
 
 SRC_MAIN	=	main.c
 
-OBJ_DIR		=	strlen/obj
+OBJ_DIR		=	atoi/obj
 OBJS		=	$(addprefix $(OBJ_DIR)/, $(SRC:.c=.o))
 OBJS		+=	$(addprefix $(OBJ_DIR)/, $(SRC_MAIN:.c=.o))
 

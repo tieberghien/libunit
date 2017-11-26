@@ -1,21 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   01_basic_test.c                                    :+:      :+:    :+:   */
+/*   05_begin_needle_test.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 10:50:43 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 17:30:25 by wbaridon         ###   ########.fr       */
+/*   Created: 2017/11/25 17:36:25 by wbaridon          #+#    #+#             */
+/*   Updated: 2017/11/25 17:36:39 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"libft.h"
-#include	<stdlib.h>
+#include "libft.h"
+#include <string.h>
 
-int		basic_test(void)
+int		begin_needle_test(void)
 {
-	if (ft_atoi("42") == atoi("42"))
+	if (ft_strstr("Premierpe pe pe t petit test pet", "pet")
+	== strstr("Premierpe pe pe t  petit test pet", "pet"))
 		return (0);
 	else
 		return (-1);

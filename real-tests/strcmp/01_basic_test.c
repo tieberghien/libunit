@@ -5,17 +5,17 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: wbaridon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 10:50:43 by wbaridon          #+#    #+#             */
-/*   Updated: 2017/11/26 17:30:25 by wbaridon         ###   ########.fr       */
+/*   Created: 2017/11/25 13:05:23 by wbaridon          #+#    #+#             */
+/*   Updated: 2017/11/25 13:08:27 by wbaridon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"libft.h"
-#include	<stdlib.h>
+#include "libft.h"
+#include <string.h>
 
 int		basic_test(void)
 {
-	if (ft_atoi("42") == atoi("42"))
+	if (ft_strcmp("abc", "abc") == strcmp("abc", "abc"))
 		return (0);
 	else
 		return (-1);
