@@ -20,7 +20,7 @@ int		free_test(void)
 
 	str1 = ft_strdup("Free");
 	str2 = strdup("Free");
-	if (str1 == str2)
+	if (ft_strcmp(str1,str2) == 0)
 		return (0);
 	else
 		return (-1);
