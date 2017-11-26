@@ -1,28 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   05_time_test.c                                     :+:      :+:    :+:   */
+/*   06_abort_test.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etieberg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/25 19:52:06 by etieberg          #+#    #+#             */
-/*   Updated: 2017/11/26 18:33:30 by etieberg         ###   ########.fr       */
+/*   Created: 2017/11/26 18:18:34 by etieberg          #+#    #+#             */
+/*   Updated: 2017/11/26 18:30:31 by etieberg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "test.h"
-#include <time.h>
 
-int			timeout_test(void)
+int		abort_test(void)
 {
-	int		i;
-
-	while (1)
+	if (ft_strlen("dkjfdfkjg"))
 	{
-		i = ft_strlen("dfkhdfkjg");
-		if (sleep(3))
-			return (0);
-		else
-			return (-1);
+		abort();
+		return (0);
 	}
+	else
+		return (-1);
 }

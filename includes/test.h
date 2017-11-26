@@ -6,7 +6,7 @@
 /*   By: etieberg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 22:16:13 by etieberg          #+#    #+#             */
-/*   Updated: 2017/11/25 22:28:18 by etieberg         ###   ########.fr       */
+/*   Updated: 2017/11/26 18:22:33 by etieberg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,6 @@ int		ko_test(void);
 int		segv_test(void);
 int		buse_test(void);
 int		timeout_test(void);
+int		abort_test(void);
 
 #endif

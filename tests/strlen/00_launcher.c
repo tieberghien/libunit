@@ -6,7 +6,7 @@
 /*   By: etieberg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 19:43:16 by etieberg          #+#    #+#             */
-/*   Updated: 2017/11/26 17:49:37 by etieberg         ###   ########.fr       */
+/*   Updated: 2017/11/26 18:31:06 by etieberg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,6 @@ int			test_launcher(void)
 	load_tests(&test_lst, "SEGV test", &segv_test, &i);
 	load_tests(&test_lst, "BUSE test", &buse_test, &i);
 	load_tests(&test_lst, "TIMEOUT test", &timeout_test, &i);
+	load_tests(&test_lst, "ABORT test", &abort_test, &i);
 	return (launch_tests(&test_lst, i));
 }

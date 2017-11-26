@@ -6,11 +6,12 @@
 /*   By: etieberg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/24 23:01:29 by etieberg          #+#    #+#             */
-/*   Updated: 2017/11/26 17:52:40 by etieberg         ###   ########.fr       */
+/*   Updated: 2017/11/26 18:30:17 by etieberg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libunit.h"
+#include <stdio.h>
 
 static t_unit	*create_test_unit(char *name_test, int (*f)(void))
 {
@@ -61,6 +62,8 @@ static int		display_res(pid_t pid)
 			colourize(YELLOW, "[SEGV]");
 		else if (WTERMSIG(pid) == SIGBUS)
 			colourize(BLUE, "[BUSE]");
+		else if (WTERMSIG(pid) == SIGABRT)
+			colourize(MAGENTA, "[ABORT]");
 		return (-1);
 	}
 	return (0);

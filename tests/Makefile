@@ -6,7 +6,7 @@
 #    By: etieberg <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/25 22:01:31 by etieberg          #+#    #+#              #
-#    Updated: 2017/11/26 17:24:02 by etieberg         ###   ########.fr        #
+#    Updated: 2017/11/26 18:21:54 by etieberg         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,8 @@ SRC			=	00_launcher.c	\
 				02_ko_test.c	\
 				03_segv_test.c	\
 				04_buse_test.c	\
-				05_time_test.c
+				05_time_test.c	\
+				06_abort_test.c
 
 SRC_MAIN	=	main.c
 
